@@ -1,7 +1,9 @@
 # IEEE 754 Binary Converter
 
-Authors:
-
+Authors (team):\
+Pavlosiuk Roman - https://github.com/UCUgllekk \
+Hrynda Yuliana - https://github.com/YulianaHrynda \
+Denysova Iryna - https://github.com/Shnapa
 
 This project provides bidirectional conversion between binary string representation and floating-point formats:
 - **FP16** (Half precision, 16-bit)
@@ -20,10 +22,16 @@ The converter supports:
 ## Build Instructions
 
 ### Clone with Google Test (as submodule)
+
 ```bash
-git clone --recurse-submodules https://github.com/YulianaHrynda/ieee754_hrynda_pavlosiuk_denysova.git
+git clone https://github.com/YulianaHrynda/ieee754_hrynda_pavlosiuk_denysova.git
 cd ieee754_converter
 ```
+```bash
+git submodule add https://github.com/google/googletest.git external/googletest
+git submodule update --init --recursive
+```
+
 ## Build the project
 
 ```bash
@@ -35,10 +43,4 @@ make
 Run Google Tests
 ```bash
 ./run_tests
-```
-
-Or use CTest:
-
-```bash
-ctest
 ```
