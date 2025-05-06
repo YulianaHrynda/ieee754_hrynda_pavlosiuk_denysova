@@ -25,7 +25,7 @@ The converter supports:
 
 ```bash
 git clone https://github.com/YulianaHrynda/ieee754_hrynda_pavlosiuk_denysova.git
-cd ieee754_converter
+cd ieee754_hrynda_pavlosiuk_denysova
 ```
 ```bash
 git submodule add https://github.com/google/googletest.git external/googletest
